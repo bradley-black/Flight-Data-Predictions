@@ -19,6 +19,8 @@ df = kagglehub.dataset_load(
 
 df = df.rename(columns={"Unnamed: 0": "ID"})
 
+#step 1
+
 print("\n")
 print("First 5 records:")
 print(df.head())
@@ -43,3 +45,23 @@ print(df.columns)
 print("\n")
 print("Row index:")
 print(df.index)
+print("\n")
+print("Number of unique entries per column:")
+print(df.nunique())
+
+#step 2 Clean 
+print("\n")
+print("Step 2: Clean Data")
+print("\n")
+print("Null values per column:")
+print(df.isnull().sum())
+print("\n")
+print("Duplicate rows:")
+print(df.duplicated().sum())
+print("\n")
+print("Duplicate rows data:")
+print(df[df.duplicated()])
+
+
+
+
