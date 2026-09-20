@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A flight price analysis and prediction"
 readme = "README.md"
 authors = [
-    { name = "Bradley", email = "Bradley.todd.black@gmail.com}
+    { name = "Bradley", email = "Bradley.todd.black@gmail.com"}
 ]
 requires-python = ">=3.14"
 dependencies = [
