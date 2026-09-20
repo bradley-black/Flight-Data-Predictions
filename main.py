@@ -18,6 +18,8 @@ df = kagglehub.dataset_load(
 )
 
 df = df.rename(columns={"Unnamed: 0": "ID"})
+df["route"] = df["source_city"] + " -> " + df["destination_city"]
+
 
 #step 1
 
@@ -61,8 +63,6 @@ print(df.duplicated().sum())
 print("\n")
 print("Duplicate rows data:")
 print(df[df.duplicated()])
-
-
 
 
 
