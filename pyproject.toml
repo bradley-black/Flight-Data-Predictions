@@ -1,10 +1,10 @@
 [project]
 name = "flight-data-predictions"
 version = "0.1.0"
-description = "Add your description here"
+description = "A flight price analysis and prediction"
 readme = "README.md"
 authors = [
-    { name = "Your Name", email = "you@example.com" }
+    { name = "Bradley", email = "Bradley.todd.black@gmail.com}
 ]
 requires-python = ">=3.14"
 dependencies = [
